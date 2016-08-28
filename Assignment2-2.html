@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Exercise</title>
+	<style type="text/css">
+		div{
+			background-color: black;
+			height:30px;
+			width:100%;
+			opacity: 0.7;
+		}
+		form{
+			width:500px;
+			margin: 20px 50px;
+		}
+	</style>
+</head>
+<body>
+<form name="myform" method="POST">
+	<div>
+		
+	</div>
+	<fieldset>
+		<legend>
+			Your Details:
+		</legend>
+		<label>Name:</label>
+		<input type="text" name="name"/>
+		<label>Email:</label>
+		<input type="text" name="email"/>
+	</fieldset>
+	<fieldset>
+		<legend>
+			Your Review:
+		</legend>
+		<span>
+			How did you hear about us?
+		</span>
+		<select name="mymenu">
+			<option name="Google">
+				Google
+			</option>
+			<option name="Facebook">
+				Facebook
+			</option>
+		</select>
+		<p>Would you visit us again?</p>
+		<input type="radio" name="myradio">
+		<label>Yes</label>
+		<input type="radio" name="secondradio">
+		<label>No</label>
+		<input type="radio" name="thirdradio">
+		<label>Maybe</label>
+		<p>Comments:</p>
+		<textarea cols="55" rows="5"></textarea><br/>
+		<input type="checkbox" name="signup" checked/>
+		<label>Sign me up for email updates</label><br/>
+		<input type="submit" name="submit" value="Submit Review">
+	</fieldset>
+</form>
+</body>
+</html>
